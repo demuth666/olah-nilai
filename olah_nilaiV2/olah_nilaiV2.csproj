@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5823DD5D-AB41-4398-9C3D-16E34BD35BDF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>olah_nilaiV2</RootNamespace>
+    <AssemblyName>olah_nilaiV2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bantu.cs" />
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="datasiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="datasiswa.Designer.cs">
+      <DependentUpon>datasiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="guru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="guru.Designer.cs">
+      <DependentUpon>guru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inisiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inisiswa.Designer.cs">
+      <DependentUpon>inisiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User Control\aboutus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Control\aboutus.Designer.cs">
+      <DependentUpon>aboutus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\asdfas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>asdfas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="User Control\dbguru.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\dbguru.Designer.cs">
+      <DependentUpon>dbguru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\dbsiswa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\dbsiswa.Designer.cs">
+      <DependentUpon>dbsiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\guru.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\guru.Designer.cs">
+      <DependentUpon>guru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\inirapot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\inirapot.Designer.cs">
+      <DependentUpon>inirapot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\logacti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\logacti.Designer.cs">
+      <DependentUpon>logacti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\nilai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\nilai.Designer.cs">
+      <DependentUpon>nilai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\rapot.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rapot.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="User Control\siswa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\siswa.Designer.cs">
+      <DependentUpon>siswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\user.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\user.Designer.cs">
+      <DependentUpon>user.cs</DependentUpon>
+    </Compile>
+    <None Include="Resources\4111310.jpg" />
+    <None Include="Resources\lock screen, harvard.jpg" />
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="datasiswa.resx">
+      <DependentUpon>datasiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="guru.resx">
+      <DependentUpon>guru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inisiswa.resx">
+      <DependentUpon>inisiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <EmbeddedResource Include="User Control\aboutus.resx">
+      <DependentUpon>aboutus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\asdfas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>asdfas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\dbguru.resx">
+      <DependentUpon>dbguru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\dbsiswa.resx">
+      <DependentUpon>dbsiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\guru.resx">
+      <DependentUpon>guru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\inirapot.resx">
+      <DependentUpon>inirapot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\logacti.resx">
+      <DependentUpon>logacti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\nilai.resx">
+      <DependentUpon>nilai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\rapot.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rapot.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\siswa.resx">
+      <DependentUpon>siswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\user.resx">
+      <DependentUpon>user.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
